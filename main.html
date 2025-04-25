@@ -1,16 +1,112 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Complex Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid orange;
+      text-align: center;
+      padding: 3px 5px;
+    }
+    thead th {
+      background-color: #888888;
+      color: white;
+    }
+    .sub-total-text {
+      text-align: right;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <table>
+    <thead>
+      <tr>
+        <th>Firm</th>
+        <th>Org</th>
+        <th>Lob</th>
+        <th>Sub Lob</th>
+        <th>Business Plans</th>
+        <th>Business Components</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="11">XYZ</td>
+        <td rowspan="5">CST</td>
+        <td rowspan="3">CT</td>
+        <td>ADS</td>
+        <td>1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>BDS</td>
+        <td>2</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>EDS</td>
+        <td>3</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td rowspan="2">INFRA</td>
+        <td>FDS</td>
+        <td>4</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>GDS</td>
+        <td>5</td>
+        <td>13</td>
+      </tr>
 
+      <!-- Subtotal Row -->
+      <tr>
+        <td class="sub-total-text" colspan="3">Sub Total</td>
+        <td>6</td>
+        <td>15</td>
+      </tr>
+
+      <!-- Remaining rows for demonstration -->
+      <tr>
+        <td rowspan="6">HPT</td>
+        <td rowspan="3">AI</td>
+        <td>ML</td>
+        <td>7</td>
+        <td>14</td>
+      </tr>
+      <tr>
+        <td>DL</td>
+        <td>8</td>
+        <td>11</td>
+      </tr>
+      <tr>
+        <td>CV</td>
+        <td>9</td>
+        <td>16</td>
+      </tr>
+      <tr>
+        <td rowspan="3">IT</td>
+        <td>Cloud</td>
+        <td>10</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <td>Security</td>
+        <td>11</td>
+        <td>18</td>
+      </tr>
+      <tr>
+        <td>Network</td>
+        <td>12</td>
+        <td>17</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
-
 </html>
