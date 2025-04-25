@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Complex Table</title>
   <style>
     table {
       border-collapse: collapse;
+      border-left: 1px solid orange;
+      border-bottom: 1px solid orange;
       width: 100%;
     }
     th, td {
-      border: 1px solid orange;
+      border-top: 1px solid orange;
+      border-right: 1px solid orange;
       text-align: center;
       padding: 3px 5px;
     }
@@ -66,15 +69,14 @@
       </tr>
 
       <!-- Subtotal Row -->
-      <tr>
+      <tr class="sub-total-row">
         <td class="sub-total-text" colspan="3">Sub Total</td>
         <td>6</td>
         <td>15</td>
       </tr>
 
-      <!-- Remaining rows for demonstration -->
       <tr>
-        <td rowspan="6">HPT</td>
+        <td rowspan="4">HPT</td>
         <td rowspan="3">AI</td>
         <td>ML</td>
         <td>7</td>
@@ -91,20 +93,10 @@
         <td>16</td>
       </tr>
       <tr>
-        <td rowspan="3">IT</td>
+        <td>IT</td>
         <td>Cloud</td>
         <td>10</td>
         <td>20</td>
-      </tr>
-      <tr>
-        <td>Security</td>
-        <td>11</td>
-        <td>18</td>
-      </tr>
-      <tr>
-        <td>Network</td>
-        <td>12</td>
-        <td>17</td>
       </tr>
     </tbody>
   </table>
